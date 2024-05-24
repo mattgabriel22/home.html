@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EL CHAPO'S KICKS - Shop Now</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>EL CHAPO'S KICKS</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+	  <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Explore Our Collection</h2>
+      <p>Discover Vintage Kicks at great prices</p>
+    </div>
+  </section>
+
+  <section class="products">
+    <div class="container">
+      <h2>BEST SELLING KICKS </h2>
+
+      <div class="product">
+        <img src="product1.jpg" alt="Product 1">
+        <h3>Anthony Taberna 2 "Off-White"</h3>
+        <p>P12,995</p>
+        <button class="btn add-to-cart" data-id="Anthony Taberna 2 Off-White">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="product2.jpg" alt="Product 2">
+        <h3>Jason Derulo 3 "Crazy Gray"</h3>
+        <p>P8,999</p>
+        <button class="btn add-to-cart" data-id="Jason Derulo 3 Crazy Gray">Add to Cart</button>
+      </div>
+	
+      <div class="product">
+        <img src="product3.jpg" alt="Product 3">
+        <h3>Jericho Rosales "The Legacy"</h3>
+        <p>P13,999</p>
+        <button class="btn add-to-cart" data-id="Jericho Rosales The Legacy">Add to Cart</button>
+      </div>
+
+     <div class="product">
+        <img src="product4.jpg" alt="Product 4">
+        <h3>Noli De Castro "Blue Jaguar"</h3>
+        <p>P9,995</p>
+        <button class="btn add-to-cart" data-id="Noli De Castro Blue Jaguar">Add to Cart</button>
+      </div>
+
+   <div class="product">
+        <img src="product5.jpg" alt="Product 5">
+        <h3> Air Raffy Tulfo "Idol White"</h3>
+        <p>P9,450</p>
+        <button class="btn add-to-cart" data-id="Air Raffy Tulfo Idol White">Add to Cart</button>
+      </div>
+
+   <div class="product">
+        <img src="product6.jpg" alt="Product 6">
+        <h3>Moira DT Black "Year 2020"</h3>
+        <p>P11,995</p>
+        <button class="btn add-to-cart" data-id="Moira DT Black Year 2020">Add to Cart</button>
+      </div>
+
+   <div class="product">
+        <img src="product7.jpg" alt="Product 7">
+        <h3>LA Tenorio 14 "Meralco Bolt"</h3>
+        <p>P16,999</p>
+        <button class="btn add-to-cart" data-id="LA Tenorio 14 Meralco Bolt">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 EL CHAPO'S KICKS. All rights reserved.</p>
+    </div>
+  </footer>
+
+<style>
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background: #690505;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  background: url('hero-bg.jpg') center/cover no-repeat; 
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.btn.shop-now-btn {
+  background: #690505;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn.shop-now-btn:hover {
+  background: #555;
+}
+
+.product {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.product h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 18px;
+  color: #777;
+}
+
+footer {
+  background: #690505;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+  addToCartButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const productId = this.getAttribute('data-id');
+      // Simulating adding product to cart, you can replace this with your actual cart logic
+      alert(`${productId} added to cart`);
+    });
+  });
+});
+</script>
+
+</body>
+</html>

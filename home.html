@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EL CHAPO'S KICKS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>EL CHAPO'S KICKS</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+	  <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Welcome to El Chapo's Kicks </h1>
+      <h2>Discover Vintage Kicks at great prices</h2>
+      <a href="shop.html" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <section class="products">
+    <div class="container">
+      <h2>BEST SELLING KICKS </h2>
+      <div class="product">
+        <img src="product1.jpg" alt="Product 1">
+        <h3>Anthony Taberna 2 "Off-White"</h3>
+        <p>P12,995</p>
+        <button class="btn add-to-cart" data-id="1">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="product2.jpg" alt="Product 2">
+        <h3>Jason Derulo 3 "Crazy Gray"</h3>
+        <p>P8,999</p>
+        <button class="btn add-to-cart" data-id="2">Add to Cart</button>
+      </div>
+      <!-- More products can be added here -->
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 EL CHAPO'S KICKS. All rights reserved.</p>
+    </div>
+  </footer>
+
+<style>
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background: #690505;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  background: url('hero-bg.jpg') center/cover no-repeat; /* Example background image */
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #690505;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #555;
+}
+
+.products {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product {
+  margin: 0 20px 30px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.product h3 {
+  margin-top: 10px;
+}
+
+.product p {
+  color: #777;
+}
+
+footer {
+  background: #690505;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+</style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+      addToCartButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const productId = this.getAttribute('data-id');
+          // You can add functionality to add the product to the cart here
+          alert(`Product ${productId} added to cart`);
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
